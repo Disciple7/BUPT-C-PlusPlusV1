@@ -79,7 +79,7 @@ void flush_tester(int nowUserPos, int wordAdd, vector<tester>& testerList)
 		if (tmpInfoList[0] == nowtester.get_name())
 		{
 			testerFile.seekp(tmpFptr);
-			testerFile << nowtester.get_name() << "," << nowtester.get_password() << "," << nowtester.get_level() << "," << nowtester.get_problem_num() << endl;
+			testerFile << "\n" << nowtester.get_name() << "," << nowtester.get_password() << "," << nowtester.get_level() << "," << nowtester.get_problem_num();
 			break;
 		}
 		tmpInfoList.clear();//tmpInfoList要清理，因为string_split用的是push_back，不检查容器内容

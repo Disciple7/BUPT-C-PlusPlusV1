@@ -49,7 +49,7 @@ void state_register(vector<player>& playerList, vector<tester>& testerList)
 			cout << "playerList.csv open failed! " << endl;
 			abort();
 		}
-		playerFile << newPlayer.get_name() << "," << newPlayer.get_password() << ",0,0,0" << endl;
+		playerFile << "\n" << newPlayer.get_name() << "," << newPlayer.get_password() << ",0,0,0";
 		playerFile.close();
 		playerList.push_back(newPlayer);
 		cout << "Player successfully registers!" << endl;
@@ -75,7 +75,7 @@ void state_register(vector<player>& playerList, vector<tester>& testerList)
 			cout << "testerList.csv open failed! " << endl;
 			abort();
 		}
-		testerFile << newTester.get_name() << "," << newTester.get_password() << ",0,0" << endl;
+		testerFile << "\n" << newTester.get_name() << "," << newTester.get_password() << ",0,0";
 		testerFile.close();
 		testerList.push_back(newTester);
 		cout << "Tester successfully registers!" << endl;

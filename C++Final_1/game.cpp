@@ -76,7 +76,7 @@ void flush_player(int nowUserPos, int bestRound, vector<player>& playerList)
 		if (tmpInfoList[0] == nowPlayer.get_name())
 		{
 			playerFile.seekp(tmpFptr);
-			playerFile << nowPlayer.get_name() << "," << nowPlayer.get_password() << "," << nowPlayer.get_level() << "," << nowPlayer.get_exp() << "," << nowPlayer.get_best_round() << endl;
+			playerFile << "\n" << nowPlayer.get_name() << "," << nowPlayer.get_password() << "," << nowPlayer.get_level() << "," << nowPlayer.get_exp() << "," << nowPlayer.get_best_round();
 			break;
 		}
 		tmpInfoList.clear();

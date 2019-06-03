@@ -1,7 +1,7 @@
 #ifndef GLOBAL_H
 #define GLOBAL_H
 
-#define DEV_MODE 1
+#define DEV_MODE 0
 
 #include <iostream>
 #include<iomanip>
